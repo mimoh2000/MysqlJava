@@ -1,16 +1,16 @@
 package Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Candidate {
 
-    private String id;
+    private int id;
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String email;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -22,7 +22,7 @@ public class Candidate {
         return lastName;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -30,7 +30,7 @@ public class Candidate {
         return email;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -42,7 +42,7 @@ public class Candidate {
         this.lastName = lastName;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

@@ -4,18 +4,14 @@
 package mysqljava;
 
 
-import Database.DbQueries;
-import Model.Candidate;
-
-import java.util.ArrayList;
+import Controller.CandidateController;
 
 public class App {
-
-
     public static void main(String[] args) {
 
 
-        new DbQueries().listAllCandidates();
+        //new CandidateController().listAllCandidates();
+        new CandidateController().getCandidateById(115);
 
     }
 
